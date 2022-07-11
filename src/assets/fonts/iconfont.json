@@ -1,0 +1,51 @@
+{
+  "id": "3450467",
+  "name": "shopp",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4719755",
+      "name": "商品管理",
+      "font_class": "shangpinguanli",
+      "unicode": "e6b0",
+      "unicode_decimal": 59056
+    },
+    {
+      "icon_id": "6501181",
+      "name": "权限",
+      "font_class": "icon--quanxian",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "16530775",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "18267915",
+      "name": "订单",
+      "font_class": "dingdan",
+      "unicode": "e98d",
+      "unicode_decimal": 59789
+    },
+    {
+      "icon_id": "5262897",
+      "name": "彩色-箭头-向上-1",
+      "font_class": "cs-jt-xs-1-1",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "5262899",
+      "name": "彩色-箭头-向下-1",
+      "font_class": "cs-jt-xx-1-1",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    }
+  ]
+}
