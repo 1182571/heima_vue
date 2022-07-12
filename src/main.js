@@ -3,9 +3,11 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import '@/assets/css/glbal.css'
-import { Form, Dialog, FormItem, Input, Button, Message, Container, Header, Aside, Main, Menu, MenuItemGroup, Submenu, MenuItem, Breadcrumb, BreadcrumbItem, Card, Row, Col, TableColumn, Table, Switch, Tooltip, Pagination, MessageBox, Tag, Popconfirm } from 'element-ui'
+import { Form, Dialog, FormItem, Input, Button, Message, Container, Header, Aside, Main, Menu, MenuItemGroup, Submenu, MenuItem, Breadcrumb, BreadcrumbItem, Card, Row, Col, TableColumn, Table, Switch, Tooltip, Pagination, MessageBox, Tag, Popconfirm, Cascader } from 'element-ui'
 import API from '@/api/index'
 import '@/assets/fonts/iconfont.css'
+import TreeTable from 'vue-table-with-tree-grid'
+Vue.component('tree-table', TreeTable)
 Vue.prototype.$API = API
 Vue.config.productionTip = false
 Vue.use(Form)
@@ -33,6 +35,7 @@ Vue.use(Pagination)
 Vue.use(Dialog)
 Vue.use(Tag)
 Vue.use(Popconfirm)
+Vue.use(Cascader)
 Vue.prototype.$confirm = MessageBox.confirm
 
 Vue.prototype.$message = Message
