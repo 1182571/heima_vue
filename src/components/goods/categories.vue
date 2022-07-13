@@ -29,7 +29,7 @@
         <!-- 操作 -->
         <template slot="opt" slot-scope="{row}">
           <el-button size='mini' type='primary' icon="el-icon-edit" @click="editCate(row.cat_id)">编辑</el-button>
-          <el-button size='mini' type='success' icon="el-icon-delete">删除</el-button>
+          <el-button size='mini' type='success' icon="el-icon-delete"  @click="deleteCate(row)">删除</el-button>
         </template>
       </tree-table>
 
@@ -201,6 +201,16 @@ export default {
       if (res.meta.status === 200) {
         this.$message.success('更新成功')
         this.getCateList()
+      }
+    },
+    async deleteCate (row) {
+      console.log(row)
+      const { data: res } = await this.$API.good.reqDeleteCate(row.cat_id)
+      if (res.meta.status === 200) {
+        this.$message.success('删除成功')
+        this.getCateList()
+      } else {
+        this.$message.error('删除失败')
       }
     }
 
