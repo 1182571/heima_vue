@@ -73,3 +73,32 @@ export const reqPushManyOrstatValue = (id, attrId, attrname, attrsel, attrvals) 
   method: 'put',
   data: { attr_name: attrname, attr_sel: attrsel, attr_vals: attrvals }
 })
+
+// 商品列表数据 goods
+export const reqGetGoodsValue = ({ query, pagenum, pagesize }) => request({
+  url: 'goods',
+  method: 'get',
+  params: { query, pagenum, pagesize }
+})
+// 删除商品 goods/:id
+export const reqDeleteGoods = (id) => request({
+  url: `goods/${id}`,
+  method: 'delete'
+})
+// 商品分类数据列表  categories
+export const reqGetGateList = () => request({
+  url: 'categories',
+  method: 'get'
+})
+// 参数列表 categories/:id/attributes
+export const reqGetcategories = (id, { sel }) => request({
+  url: `categories/${id}/attributes`,
+  method: 'get',
+  params: { sel }
+})
+// 添加商品
+export const reqAddgoods = (goods) => request({
+  url: 'goods',
+  method: 'post',
+  data: goods
+})
