@@ -102,3 +102,14 @@ export const reqAddgoods = (goods) => request({
   method: 'post',
   data: goods
 })
+// 订单数据列表orders
+export const reqGetOrder = (params) => request({
+  url: 'orders',
+  method: 'get',
+  params
+})
+// 查看物流信息/kuaidi/:id 供测试的物流单号：1106975712662
+export const reqGetkuaidi = (id) => request({
+  url: `/kuaidi/${id}`,
+  method: 'get'
+})

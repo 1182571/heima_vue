@@ -10,7 +10,7 @@ import 'quill/dist/quill.core.css' // import styles
 import 'quill/dist/quill.snow.css' // for snow theme
 import 'quill/dist/quill.bubble.css'
 
-import { Form, Dialog, FormItem, Input, Button, Message, Container, Header, Aside, Main, Menu, MenuItemGroup, Submenu, MenuItem, Breadcrumb, BreadcrumbItem, Card, Row, Col, TableColumn, Table, Switch, Tooltip, Pagination, MessageBox, Tag, Popconfirm, Cascader, Alert, Tabs, TabPane, Steps, Step, Checkbox, CheckboxGroup, Upload } from 'element-ui'
+import { Form, Dialog, FormItem, Input, Button, Message, Container, Header, Aside, Main, Menu, MenuItemGroup, Submenu, MenuItem, Breadcrumb, BreadcrumbItem, Card, Row, Col, TableColumn, Table, Switch, Tooltip, Pagination, MessageBox, Tag, Popconfirm, Cascader, Alert, Tabs, TabPane, Steps, Step, Checkbox, CheckboxGroup, Upload, RadioGroup, Radio, Timeline, TimelineItem } from 'element-ui'
 import API from '@/api/index'
 import '@/assets/fonts/iconfont.css'
 import TreeTable from 'vue-table-with-tree-grid' // for bubble theme
@@ -53,6 +53,10 @@ Vue.use(Step)
 Vue.use(Checkbox)
 Vue.use(CheckboxGroup)
 Vue.use(Upload)
+Vue.use(RadioGroup)
+Vue.use(Radio)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
 Vue.prototype.$confirm = MessageBox.confirm
 Vue.prototype.$message = Message
 Vue.filter('dateFormat', function (originVal) {
