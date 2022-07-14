@@ -113,3 +113,8 @@ export const reqGetkuaidi = (id) => request({
   url: `/kuaidi/${id}`,
   method: 'get'
 })
+// 基于时间统计的折线图 reports/type/1
+export const reqreports = () => request({
+  url: 'reports/type/1',
+  method: 'get'
+})
